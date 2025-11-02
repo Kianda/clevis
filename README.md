@@ -1,5 +1,10 @@
 # clevis
-Clevis runtime inside a Alpine Linux Docker image
+Clevis multiarch runtime inside a Alpine Linux Docker image
+
+|        386         |       amd64        |       arm/v6       |       arm/v7       |       arm64        |      ppc64le       |       s390x        |
+| :----------------: | :----------------: | :----------------: | :----------------: | :----------------: | :----------------: | :----------------: |
+| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+
 
 ### Examples
 
@@ -32,3 +37,7 @@ docker run --rm -i --network host kianda/clevis:latest decrypt < output.enc | jq
 # or
 docker run --rm -i --network host kianda/clevis:latest decrypt < output.enc
 ```
+
+### Extras
+
+In you need a Tang server with Docker check this: https://github.com/padhi-homelab/docker_tang
